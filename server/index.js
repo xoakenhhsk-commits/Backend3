@@ -26,7 +26,7 @@ const posts = []; // { id, authorPhone, content, image, timestamp, likes: [] }
 const userSockets = {}; // Key: phoneNumber, Value: socketId
 
 io.on("connection", (socket) => {
-  console.log(`User Connected: ${socket.id}`);
+  console.log(`User Connected: ${socket.id} (v2.0 Social)`);
   let currentUser = null;
 
   // --- Auth ---
